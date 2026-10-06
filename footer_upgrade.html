@@ -1,0 +1,161 @@
+<!-- ── UPGRADED FOOTER ── Replace your existing <footer class="footer-strip"> with this -->
+
+<footer class="footer-strip">
+  <div class="footer-inner">
+
+    <!-- Logo + Brand -->
+    <div class="footer-brand">
+      <svg class="footer-bloom" viewBox="-30 -30 60 60" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.9">
+          <ellipse rx="12" ry="4.5" fill="#f4a0c0" transform="rotate(0)"/>
+          <ellipse rx="12" ry="4.5" fill="#e8729a" transform="rotate(60)"/>
+          <ellipse rx="12" ry="4.5" fill="#f4a0c0" transform="rotate(120)"/>
+          <ellipse rx="12" ry="4.5" fill="#e8729a" transform="rotate(180)"/>
+          <ellipse rx="12" ry="4.5" fill="#f4a0c0" transform="rotate(240)"/>
+          <ellipse rx="12" ry="4.5" fill="#e8729a" transform="rotate(300)"/>
+          <circle r="5" fill="#ffd6e8"/>
+          <circle r="3" fill="#ffb3d1"/>
+        </g>
+      </svg>
+      <div class="footer-brand-text">
+        <span class="footer-brand-name">Precious Satin Bouquet</span>
+        <span class="footer-brand-tagline">Blossom Atelier · Est. 2026</span>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <a href="index.php">Home</a>
+      <span class="footer-dot">·</span>
+      <a href="index.php?category=all">Shop</a>
+      <span class="footer-dot">·</span>
+      <a href="contact.php">Contact</a>
+      <span class="footer-dot">·</span>
+      <a href="orders.php">My Orders</a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copy">
+      &copy; 2026 <span>Precious Satin Bouquet</span> &nbsp;&middot;&nbsp; All rights reserved &nbsp;&middot;&nbsp; Handcrafted with ♡
+    </div>
+
+  </div>
+</footer>
+
+<style>
+/* ── UPGRADED FOOTER STYLES ── Add these to your <style> or style.css ── */
+.footer-strip {
+  background: linear-gradient(160deg, #7b1a3c 0%, #b0305e 45%, #d64d7a 100%);
+  border-top: 2px solid rgba(255,180,210,0.18);
+  padding: 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Brand block */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-bloom {
+  width: 44px;
+  height: 44px;
+  animation: footerBloomSpin 10s linear infinite;
+  filter: drop-shadow(0 0 10px rgba(255,180,210,0.45));
+  flex-shrink: 0;
+}
+@keyframes footerBloomSpin { to { transform: rotate(360deg); } }
+
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer-brand-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.footer-brand-tagline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,210,225,0.65);
+  margin-top: 5px;
+}
+
+/* Divider */
+.footer-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,180,210,0.5), transparent);
+}
+
+/* Nav links */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,210,225,0.75);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: #fff; }
+
+.footer-dot {
+  color: rgba(255,180,210,0.35);
+  font-size: 0.9rem;
+}
+
+/* Copyright */
+.footer-copy {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: rgba(255,210,225,0.45);
+  text-align: center;
+}
+.footer-copy span {
+  color: rgba(255,180,210,0.7);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-inner { padding: 36px 20px 28px; gap: 16px; }
+  .footer-brand-name { font-size: 1.3rem; }
+  .footer-links { gap: 8px; }
+}
+</style>
